@@ -1,0 +1,56 @@
+/* style.css */
+
+/* Style du bouton */
+#view-tracking {
+    padding: 10px 20px;
+    background-color: #9400aead;
+    color: #fff;
+    border: none;
+    border-radius: 20px; /* Ajout de l'arrondi */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition fluide de la couleur */
+}
+
+/* Au survol du bouton */
+#view-tracking:hover {
+    background-color: #750084; /* Nouvelle couleur violette au survol */
+}
+
+/* Votre style CSS existant ici */
+
+/* Nouveau style pour les bandes en haut et en bas */
+.header {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.header img {
+    max-width: 200px;
+}
+
+.main-content {
+    min-height: calc(100vh - 145px); /* Hauteur minimale pour remplir l'espace entre le haut et le bas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: #303030;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    background-color: #5f0070b9;
+    text-align: center;
+    padding: 3px 0;
+    color: #fff;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
