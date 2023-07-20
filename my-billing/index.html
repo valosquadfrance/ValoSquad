@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ValoSquad - Suivi de facture</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .input-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .input-container label {
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .input-container input[type="number"] {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 80px;
+        }
+
+        .input-container button {
+            padding: 5px 10px;
+            background-color: #9500ae;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>ValoSquad - Suivi de facture</h1>
+        <div class="input-container">
+            <label for="invoice-number">Numéro de facture :</label>
+            <input type="number" id="invoice-number" min="1" max="100" required>
+        </div>
+        <button id="view-tracking">Voir le suivi</button>
+    </div>
+
+    <script>
+        document.getElementById("view-tracking").addEventListener("click", function () {
+            const invoiceNumber = document.getElementById("invoice-number").value;
+            if (invoiceNumber >= 1 && invoiceNumber <= 100) {
+                window.location.href = `https://valosquadfrance.github.io/ValoSquad/billings/billing${invoiceNumber}`;
+            } else {
+                alert("Le numéro de facture doit être compris entre 1 et 100.");
+            }
+        });
+    </script>
+</body>
+
+</html>
