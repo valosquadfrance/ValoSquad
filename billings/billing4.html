@@ -53,6 +53,15 @@
                     </figure>
                 </li>
             </ul>
+                        <button class="btn btn-warning" id="refresh-btn">Rafraîchir</button>
+
+    <script>
+        // Ajoutez un gestionnaire d'événements au bouton "Rafraîchir"
+        document.getElementById("refresh-btn").addEventListener("click", function () {
+            // Ouvrir un nouvel onglet avec la même URL de la page actuelle
+            window.open(window.location.href, '_blank');
+        });
+    </script>
             <hr>
         </div>
     </article>
